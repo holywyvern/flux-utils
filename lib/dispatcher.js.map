@@ -1,0 +1,1 @@
+{"version":3,"sources":["dispatcher.js"],"names":[],"mappings":";;;;;;AAAA","file":"dispatcher.js","sourcesContent":["import Dispatcher from 'generic-events';\r\n\r\nexport default Dispatcher;"],"sourceRoot":"/source/"}
