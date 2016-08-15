@@ -4,7 +4,7 @@ A collection of utility classes for Flux implementation
 ## Installing
 
 ```
-npm install --save flux-utils
+npm install --save nova-flux
 ```
 
 ## Using
@@ -14,7 +14,7 @@ npm install --save flux-utils
 #### ES5:
 
 ```js
-var flux = require('flux-utils');
+var flux = require('nova-flux');
 
 // To look more react-like
 var MyActions = flux.createActions('createTodo', 'removeTodo');
@@ -27,7 +27,7 @@ var MyActions = new flux.Actions('createTodo', 'removeTodo');
 
 ```js
 
-import { Actions } from 'flux-utils';
+import { Actions } from 'nova-flux';
 
 var MyActions = new Actions('createTodo', 'removeTodo');
 
@@ -45,7 +45,7 @@ MyActions.createTodo(name, false); // Also, any number of arguments.
 #### ES5:
 
 ```js
-var flux = require('flux-utils');
+var flux = require('nova-flux');
 
 // You ca use flux.createStore also
 var MyStore = flux.createStore({
@@ -70,7 +70,7 @@ var MyStore = flux.createStore({
 
 ```js
 
-import { Store } from 'flux-utils';
+import { Store } from 'nova-flux';
 
 // You ca use flux.createStore also
 var MyStore = new Store({
