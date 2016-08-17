@@ -4,8 +4,8 @@ import EventManager from 'generic-events';
 class Store {
 
     constructor({ actions, methods = {}, state = {} }) {
-        this._defineProperties(state);
-        this._defineActions(actions, methods);
+        let proxy = this._defineProperties(state);
+        this._defineActions(actions, methods, proxy);
     }
 
     _defineProperties(state) {
@@ -20,18 +20,23 @@ class Store {
             state:  { 
                 get() { 
                     return copy(storeState); 
-                }, 
-                set(value) { 
-                    storeState = copy(value);
-                    events.fire('change');
-                } 
+                }
             }
         });
+        return {
+            get state() {
+                return copy(storeState); 
+            },
+            set state(value) {
+                storeState = copy(value);
+                events.fire('change');
+            }
+        };
     }
 
-    _defineActions(actions, methods) {
+    _defineActions(actions, methods, proxy) {
         for (let action of actions.list()) {
-            let callback = methods[action].bind(this);
+            let callback = methods[action].bind(proxy);
             actions.dispatcher.on(action, callback);
         }
     }
