@@ -24,6 +24,9 @@ class Store {
             }
         });
         return {
+            get events() {
+                return events; 
+            },
             get state() {
                 return copy(storeState); 
             },
