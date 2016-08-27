@@ -1,7 +1,10 @@
 # flux-utils
 A collection of utility classes for Flux implementation
 
-![Travis](https://travis-ci.org/holywyvern/flux-utils.svg?branch=master)
+[![Travis](https://travis-ci.org/holywyvern/flux-utils.svg?branch=master)](https://travis-ci.org/holywyvern/flux-utils)
+[![Code Climate](https://codeclimate.com/github/holywyvern/flux-utils/badges/gpa.svg)](https://codeclimate.com/github/holywyvern/flux-utils) 
+[![Test Coverage](https://codeclimate.com/github/holywyvern/flux-utils/badges/coverage.svg)](https://codeclimate.com/github/holywyvern/flux-utils/coverage) 
+[![Issue Count](https://codeclimate.com/github/holywyvern/flux-utils/badges/issue_count.svg)](https://codeclimate.com/github/holywyvern/flux-utils)
 
 ## Installing
 
