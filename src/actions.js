@@ -1,7 +1,11 @@
 import Dispatcher from './dispatcher';
 
 /**
- * 
+ * Actions are keep organized as different objects here,
+ * for easy keeping appart to wich one is.
+ * Each action is when called, dedicated to pass the action information into 
+ * the dispatcher, and then, the dispatcher just sends them to all stores 
+ * listening to this actions.
  */
 class Actions {
 

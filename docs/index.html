@@ -33,6 +33,21 @@
                   #constructor
                 </a>
               <a
+                href='#Store'
+                class='block bold'>
+                Store
+              </a>
+                <a
+                  href='#Store.constructor'
+                  class='regular block'>
+                  #constructor
+                </a>
+                <a
+                  href='#Store.getState'
+                  class='regular block'>
+                  #getState
+                </a>
+              <a
                 href='#createActions'
                 class='block bold'>
                 createActions
@@ -57,6 +72,41 @@
                 class='block bold'>
                 Dispatcher
               </a>
+              <a
+                href='#events'
+                class='block bold'>
+                events
+              </a>
+              <a
+                href='#events'
+                class='block bold'>
+                events
+              </a>
+              <a
+                href='#getState'
+                class='block bold'>
+                getState
+              </a>
+              <a
+                href='#setState'
+                class='block bold'>
+                setState
+              </a>
+              <a
+                href='#state'
+                class='block bold'>
+                state
+              </a>
+              <a
+                href='#state'
+                class='block bold'>
+                state
+              </a>
+              <a
+                href='#state'
+                class='block bold'>
+                state
+              </a>
           </div>
         </div>
       </div>
@@ -66,7 +116,12 @@
   <h2 id='Actions' class='mt0'>
     Actions<span class='gray'>(actions)</span>
   </h2>
-  
+  <p>Actions are keep organized as different objects here,
+for easy keeping appart to wich one is.
+Each action is when called, dedicated to pass the action information into
+the dispatcher, and then, the dispatcher just sends them to all stores
+listening to this actions.</p>
+
     <h4>Parameters</h4>
     <ul class='suppress-p-margin'>
         <li>... <strong>actions</strong>
@@ -112,6 +167,107 @@
                       </div>
                     </li>
                 </ul>
+            </section>
+          </div>
+        </div>
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='Store' class='mt0'>
+    Store<span class='gray'>($0)</span>
+  </h2>
+  <p>An Store is a class than keeps an state.
+Also it responds to actions to change its state.
+After the state is changed, an Store emit the changes to all of
+the components subscribed to listen.</p>
+
+    <h4>Parameters</h4>
+    <ul class='suppress-p-margin'>
+        <li> <strong>$0</strong>
+          :
+          <div class='force-inline'>
+            
+          </div>
+            <ul>
+                <li> $0.actions
+                  </li>
+                <li> $0.methods
+                  </li>
+                <li> $0.state
+                  </li>
+            </ul>
+        </li>
+    </ul>
+      <h4>Instance members</h4>
+        <div class='collapsible' id='Store.constructor'>
+          <a href='#Store.constructor'>
+            <code>
+              #constructor<span class='gray'>(actions, $0)</span>
+            </code>
+            <div class='force-inline'>
+              <p>Creates a new store based on a set of actions</p>
+
+            </div>
+          </a>
+          <div class='collapser border px2'>
+            <section class='py2 clearfix'>
+              <h2 id='Store.constructor' class='mt0'>
+                constructor<span class='gray'>(actions, $0)</span>
+              </h2>
+              <p>Creates a new store based on a set of actions</p>
+            
+                <h4>Parameters</h4>
+                <ul class='suppress-p-margin'>
+                    <li><code><a href="#Actions">Actions</a></code> <strong>actions</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>A set of actions</p>
+            
+                      </div>
+                    </li>
+                    <li> <strong>$0</strong>
+                      :
+                      <div class='force-inline'>
+                        
+                      </div>
+                        <ul>
+                            <li> $0.actions
+                              </li>
+                            <li> $0.methods
+                              </li>
+                            <li> $0.state
+                              </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+          </div>
+        </div>
+        <div class='collapsible' id='Store.getState'>
+          <a href='#Store.getState'>
+            <code>
+              #getState<span class='gray'></span>
+            </code>
+            <div class='force-inline'>
+              <p>Gets the current state of this store.
+Equivalent to Store.prototype.state.</p>
+
+            </div>
+          </a>
+          <div class='collapser border px2'>
+            <section class='py2 clearfix'>
+              <h2 id='Store.getState' class='mt0'>
+                getState<span class='gray'></span>
+              </h2>
+              <p>Gets the current state of this store.
+            Equivalent to Store.prototype.state.</p>
+            
+                  <h4>Returns</h4>
+                  <code></code>
+                  :
+                  <div class='force-inline'>
+                    <p>A copy of the current state.</p>
+            
+                  </div>
             </section>
           </div>
         </div>
@@ -190,7 +346,7 @@
         </li>
     </ul>
       <h4>Returns</h4>
-      <code><code>Store</code></code>
+      <code><code><a href="#Store">Store</a></code></code>
       :
       <div class='force-inline'>
         <p>A new Store.</p>
@@ -210,6 +366,74 @@
   </h2>
   <p>The dispatcher is an alias of the EventManager class</p>
 
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='events' class='mt0'>
+    events<span class='gray'></span>
+  </h2>
+  <p>The event dispatcher of the Store</p>
+
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='events' class='mt0'>
+    events<span class='gray'></span>
+  </h2>
+  <p>Get the event dispatcher of the store</p>
+
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='getState' class='mt0'>
+    getState<span class='gray'></span>
+  </h2>
+  <p>Alias to state</p>
+
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='setState' class='mt0'>
+    setState<span class='gray'>(value)</span>
+  </h2>
+  <p>Alias to state=</p>
+
+    <h4>Parameters</h4>
+    <ul class='suppress-p-margin'>
+        <li> <strong>value</strong>
+          :
+          <div class='force-inline'>
+            
+          </div>
+        </li>
+    </ul>
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='state' class='mt0'>
+    state<span class='gray'></span>
+  </h2>
+  <p>The state of the Store.</p>
+
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='state' class='mt0'>
+    state<span class='gray'></span>
+  </h2>
+  <p>Gets the current state of the store.</p>
+
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='state' class='mt0'>
+    state<span class='gray'>(value)</span>
+  </h2>
+  <p>Sets the state of the store and emit changes based on it.</p>
+
+    <h4>Parameters</h4>
+    <ul class='suppress-p-margin'>
+        <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></code> <strong>value</strong>
+          :
+          <div class='force-inline'>
+            <p>The new state.</p>
+
+          </div>
+        </li>
+    </ul>
 </section>
 </div>
         </div>
