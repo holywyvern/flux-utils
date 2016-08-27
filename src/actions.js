@@ -21,6 +21,10 @@ class Actions {
         let names = actions.slice(0);
         this._createDispatcher(names);
         this._createHandles(names);
+        /**
+         * List all current actions names.
+         * @returns { string[] } A list of action names.
+         */
         this.list = () => {
             return names.slice(0);
         };
@@ -46,6 +50,9 @@ class Actions {
          * @get dispatcher 
          */
         Object.defineProperty(this, 'dispatcher', {
+            /**
+             * Get the current event dispatcher of this action set.
+             */
             get() {
                 return dispatcher;
             }

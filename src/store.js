@@ -32,6 +32,10 @@ class Store {
              * The event dispatcher of the Store
              */
             events: { 
+                /**
+                 * Gets the current event dispatcher.
+                 * @get { Dispatcher }
+                 */
                 get() { 
                     return events; 
                 } 
@@ -40,6 +44,9 @@ class Store {
              * The state of the Store.
              */
             state:  { 
+                /**
+                 * Gets a copy of the current state of this Store.
+                 */
                 get() { 
                     return copy(storeState); 
                 }
@@ -49,12 +56,14 @@ class Store {
         return {
             /**
              * Get the event dispatcher of the store
+             * @return { Dispatcher } The event dispatcher
              */
             get events() {
                 return events; 
             },
             /**
              * Gets the current state of the store.
+             * @returns { object } A copy of the current state.
              * @note it makes a deep copy to avoid modification from outside of this object.
              */
             get state() {
