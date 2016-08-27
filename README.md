@@ -5,7 +5,7 @@ A collection of utility classes for Flux implementation
 [![Code Climate](https://codeclimate.com/github/holywyvern/flux-utils/badges/gpa.svg)](https://codeclimate.com/github/holywyvern/flux-utils) 
 [![Test Coverage](https://codeclimate.com/github/holywyvern/flux-utils/badges/coverage.svg)](https://codeclimate.com/github/holywyvern/flux-utils/coverage) 
 [![Issue Count](https://codeclimate.com/github/holywyvern/flux-utils/badges/issue_count.svg)](https://codeclimate.com/github/holywyvern/flux-utils)
-
+[![Inch CI](http://inch-ci.org/github/holywyvern/flux-utils.svg?branch=master)](http://inch-ci.org/github/holywyvern/flux-utils)
 ## Installing
 
 ```
