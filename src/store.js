@@ -23,6 +23,7 @@ class Store {
                 }
             }
         });
+
         return {
             get events() {
                 return events; 
@@ -33,6 +34,12 @@ class Store {
             set state(value) {
                 storeState = copy(value);
                 events.fire('change');
+            },
+            getState() {
+                return this.state;
+            },
+            setState(value) {
+                this.state = value;
             }
         };
     }
@@ -42,6 +49,14 @@ class Store {
             let callback = methods[action].bind(proxy);
             actions.dispatcher.on(action, callback);
         }
+    }
+
+    getState() {
+        return this.state;
+    }
+
+    setState(value) {
+        this.state = value;
     }
 
 }
