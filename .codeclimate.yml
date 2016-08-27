@@ -23,6 +23,7 @@ ratings:
   - "**.rb"
 exclude_paths:
   - "lib"
+  - "docs"
 ecmaFeatures:
   modules: true
   jsx: true
