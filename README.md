@@ -1,7 +1,7 @@
 # flux-utils
 A collection of utility classes for Flux implementation
 
-[Travis](https://travis-ci.org/holywyvern/flux-utils.svg?branch=master)
+![Travis](https://travis-ci.org/holywyvern/flux-utils.svg?branch=master)
 
 ## Installing
 
