@@ -1,1 +1,1 @@
-{"version":3,"sources":["dispatcher.js"],"names":[],"mappings":";;;;;;AAAA","file":"dispatcher.js","sourcesContent":["import Dispatcher from 'generic-events';\r\n\r\nexport default Dispatcher;"],"sourceRoot":"/source/"}
+{"version":3,"sources":["dispatcher.js"],"names":[],"mappings":";;;;;;AAAA;;;;;;AAEA","file":"dispatcher.js","sourcesContent":["import Dispatcher from 'generic-events';\r\n\r\n/** The dispatcher is an alias of the EventManager class */\r\nexport default Dispatcher;"],"sourceRoot":"/source/"}

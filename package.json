@@ -31,6 +31,7 @@
     "chai": "^3.5.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
+    "gulp-documentation": "^2.2.0",
     "gulp-sourcemaps": "^1.6.0",
     "mocha": "^3.0.2"
   }
